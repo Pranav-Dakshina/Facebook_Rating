@@ -275,7 +275,7 @@ img:hover{
   width: 179px;
 }
 #rightCol{
-  float: right;
+  float: left;
   height: 100%;
   padding: 20px 0 0 2px;
   width: 225px;
@@ -306,7 +306,7 @@ img:hover{
     text-decoration: none;
 }
 .cover_img{
-  height: 47%;
+  height: 361px;
 }
 .cover{
     //visibility: hidden;
@@ -321,7 +321,7 @@ img:hover{
 .timeline_tab{
   background-color: white;
   float:left;
-  height: 6%;
+  height: 46px;
   width: 851px;
   z-index:1;
   border-top-width: 0px;
@@ -331,10 +331,10 @@ img:hover{
   border-bottom-width: 0px;
 }
 .DP_img{
-  height:20%;
+  height:160px;
   width:160px;
   position:absolute;
-  z-index: 4;
+  z-index: 3;
   top: 220px;
   left: 220px;
   /*border-color: white;
@@ -415,15 +415,13 @@ li a:hover{
   list-style: none;
   margin: 0;
   padding: 16px 0;
-  padding-top: 16px;
-  padding-right: 0px;
-  padding-bottom: 16px;
-  padding-left: 0px;
   position: relative;
+  float: left;
 }
 .left_time{
   max-width: 323px;
   width:323px;
+  height: 1405px;
   background-color: white;
   float:left;
 }
