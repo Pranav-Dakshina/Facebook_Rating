@@ -273,12 +273,14 @@ img:hover{
   height: 100%;
   padding: 20px 0 0 2px;
   width: 179px;
+  position: fixed;
 }
 #rightCol{
   float: left;
   height: 100%;
-  padding: 20px 0 0 2px;
+  padding: 20px 0 0 1087px;
   width: 225px;
+  position: fixed;
 }
 .Col {
   display: block;
@@ -290,10 +292,12 @@ img:hover{
   height: 100%;
 }
 .middleCol{
+  padding-left: 227px;
   max-width: 851px;
   width: 851px;
   float: left;
   z-index: -1;
+  position: fixed;
 }
 .img_cover{
     top:0px;
@@ -336,7 +340,7 @@ img:hover{
   position:absolute;
   z-index: 3;
   top: 220px;
-  left: 220px;
+  left: 240px;
   /*border-color: white;
   border-style: solid;
   border-width: 5px;*/
