@@ -1,6 +1,7 @@
 <html>
 <head>
-<link type="text/css" rel="stylesheet" href="style.css"/>
+  <link type="text/css" rel="stylesheet" href="style.css"/>
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
 </head>
 <body class="body">
   <div class="navbar lin">
@@ -76,7 +77,7 @@
     </div>
     <div class="timeline_tab bor">
       <div class="tl_pd">
-      <ul class="zm">
+      <ul>
         <li>
           <a class="tl_tx_bor">Timeline
           </a>
@@ -104,7 +105,56 @@
   <div class="timeline">
   <div class="left_time intro_bor">
     <div class="head">
-      <span>Intro</span>
+      <img class="in_icon" src="icons/w1.png">
+      <span class="in_label">Intro</span>
+    </div>
+    <div class="intro_msg">
+      <div id="in_msg_box" class="in_msg_box">
+        <div id="in_msg1" class="in_msg" style="color: #365899; cursor: pointer; opacity: 0;">
+            <!--<span class="plus-icon glyphicon glyphicon-plus" >+</span>-->
+            <span class="plus_icon">+</span>
+            <span class="in_msg_txt">What is your mood ? 😊</span>
+        </div>
+        <div id="in_msg2" class="in_msg " style="color: #365899; cursor: pointer; opacity: 0;">
+            <span class="plus_icon">+</span>
+            <span class="in_msg_txt">What is your favourite sport ? ⚽ 🏀 🏈</span>
+        </div>
+        <div id="in_msg3" class="in_msg " style="color: #365899; cursor: pointer; opacity: 0;">
+            <span class="plus_icon">+</span>
+            <span class="in_msg_txt">What is your favourite food ? 🍗 🌮 🍜</span>
+        </div>
+        <div id="in_msg4" class="in_msg " style="color: #365899; cursor: pointer; opacity: 0;">
+            <span class="plus_icon">+</span>
+            <span class="in_msg_txt">What is your best gadget ? ⌚ 💻 📱 </span>
+        </div>
+        <script>
+        function msg_animate() {
+           for(j = 1; j < 5; j++){
+              var b = document.getElementById("in_msg"+j);
+              if(i == j){
+
+              }
+              else{
+                b.style.WebkitAnimation = "fadeout 2s 1";
+                b.style.Animation = "fadeout 2s 1";
+              }
+           }
+           var b = document.getElementById("in_msg"+i);
+           b.style.WebkitAnimation = "fadein 2s 1";
+           b.style.Animation = "fadein 2s 1";
+          if(i == 4){
+             i = 0;
+          }
+          i++;
+          }
+          var i = 1;
+          msg_animate();
+          setInterval(msg_animate, 2000);
+        </script>
+      </div>
+    </div>
+    <div class="rating">
+      <span>Rating</span>
     </div>
   </div>
 </div>

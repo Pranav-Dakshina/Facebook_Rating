@@ -53,8 +53,9 @@ vertical-align: top;
 white-space: nowrap;
 }
 .pf_hm_rat{
-  width: 60%;
-  position: fixed;
+  float: left;
+  width: 300px;
+  position: absolute;
   margin-left: 50%;
   overflow: hidden;
 }
@@ -204,20 +205,18 @@ form{
     box-sizing: border-box;
     height: 26px;
     left: -1px;
-    margin-left: 30px;
     margin-top: 0;
-    max-width: 448px;
+    max-width: 450px;
     overflow: hidden;
     padding-left: 5px;
     padding-right: 48px;
     position: relative;
     top: 8px;
-    width: auto;
 }
 .fl .srch_a{
     margin-left: 0;
     min-width: 144px;
-    width: 50%;
+    width: 400px;
 }
 .fl{
   float: left;
@@ -227,9 +226,9 @@ form{
   float: left;
 }
 .sz{
-  margin-left: 150px;
-  height: 50%;
-  width: 50%;
+  margin-left: 8%;
+  height: 40px;
+  width: 350px;
 }
 div{
   font-family: inherit;
@@ -254,7 +253,8 @@ div{
 }*/
 .navi_icon{
   float: left;
-  margin-left: 150px;
+  position: absolute;
+  margin-left: 68%;
   overflow: hidden;
 }
 .cons1{
@@ -297,7 +297,7 @@ img:hover{
   width: 851px;
   float: left;
   z-index: -1;
-  position: fixed;
+  position: absolute;
 }
 .img_cover{
     top:0px;
@@ -434,4 +434,102 @@ li a:hover{
     border: 1px solid;
     border-color: #e5e6e9 #dfe0e4 #d0d1d5;
     border-radius: 3px;
+}
+
+span{
+  font-family: inherit;
+}
+.head{
+  padding-top: 30px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  float:left;
+  width: 100%;
+}
+.head .in_label{
+  padding-left: 15px;
+}
+.in_icon{
+  padding-left: 50px;
+  height: 20px;
+  width: 20px;
+  float:left;
+  color: rgba(#0a40e0, 0.6);
+}
+.intro_msg{
+  float: left;
+  width: 100%;
+  height: 80px;
+}
+.in_msg_box{
+  margin: 15px 10px;
+  height: 50px;
+  width: 303px;
+  background-color: #f7f8f9;
+  border-radius: 2px;
+  border-width: 0.5px;
+  border-style: solid;
+  border-color: #e5e8ec;
+}
+.in_msg{
+  margin: 10px;
+  height: 30px;
+  width: 283px;
+  position: absolute;
+}
+.plus_icon{
+  height: 30px;
+  font-weight: 200;
+  font-size: 22px;
+  float: left;
+}
+/*.glyphicon{
+  padding: 6px 10px 10px 10px;
+}*/
+.in_msg_txt{
+  margin-left: 10px;
+  padding-top: 3px;
+  font-weight: normal;
+  font-size: 14px;
+  float: left;
+}
+@-webkit-keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+@keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+@-webkit-keyframes fadeout {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+}
+@keyframes fadeout {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+}
+.rating{
+  float: left;
+  padding-top: 15px;
+  padding-left: 20px;
+  font-size: 16px;
+  font-weight: normal;
 }
