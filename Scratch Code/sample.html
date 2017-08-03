@@ -1,166 +1,437 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <link type="text/css" rel="stylesheet" href="style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="30">
+  <meta charset="UTF-8">
+  <link type="text/css" rel="stylesheet" href="style.css" />
+  <title>Facebook</title>
+  <link rel='icon' href="Icons/f3.ico">
   <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
 </head>
+
 <body class="body">
   <div class="navbar lin">
     <div class="fl ic_srch sz">
-    <div class="ic nb_in nb_a">
+      <div class="ic fl">
+        <img class="fb_ic" src="Icons/f3.png" />
       </div>
       <div class="srch nb_in nb_b srch_a" role="search">
         <form action="" method="get">
-          <input type="text" class="in_text bbwz" autocomplete="off" placeholder="Search Facebook" id="Search Facebook">
-          </input>
-          <button value="1" class="srch lh22 bbc srch_cur" tabindex="-1" aria-label="Search" data-testid="navbar_search_button" type="submit">
-          <img class="srch_ic" src="https://pranav-dakshina.github.io/newGitTest/Scratch%20Code/Icons/search.png">
+          <input type="text" class="in_text bbwz" autocomplete="off" placeholder="Search Facebook" id="Search Facebook"></input>
+          <button value="1" class="srch lh22 bbc srch_cur" tabindex="-1" aria-label="Search" data-testid="navbar_search_button" type="submit" />
+          <!--<img class="srch_ic" src="https://pranav-dakshina.github.io/newGitTest/Scratch%20Code/Icons/search.png">-->
+          <img class="srch_ic" src="Icons/search.png">
           </img>
           </button>
         </form>
       </div>
     </div>
     <div class="navig">
-    <div class="pf_hm_rat">
-        <div class="nb_in rfl" >
+      <div class="pf_hm_rat">
+        <div class="nb_in fl">
           <a class="pf_pic nb_a lin" href="http://www.pranav-dakshina.tk">
-            <img class="img_th" src="https://pranav-dakshina.github.io/newGitTest/Scratch%20Code/images/me.jpg" >
+            <img class="img_th" src="images/me.jpg" >
             <span>Pranav</span>
           </a>
         </div>
-        <div class="nb_in fl " >
+        <div class="nb_in fl ">
           <a class="nb_a lin">
             <span>Home</span>
           </a>
         </div>
-        <div class="nb_in " >
+        <div class="nb_in ">
           <a class="nb_a lin">
             <span>Rating</span>
           </a>
         </div>
-    </div>
+      </div>
 
-  <div class="navi_icon">
-    <div class="usr fl">
-      <img class="icon usr_ic cons1" src="https://pranav-dakshina.github.io/newGitTest/Scratch%20Code/Icons/u1.png">
-    </img>
-      <span class="tooltip">Friend Requests</span>
-    </div>
-    <div class="usr fl">
-      <img class="icon msg_ic cons1" src="https://pranav-dakshina.github.io/newGitTest/Scratch%20Code/Icons/m3.png">
-    </img>
-    <span class="tooltip">Messages</span>
-    </div>
-    <div class="usr fl ">
-      <img class="icon noti_ic cons2" src="https://pranav-dakshina.github.io/newGitTest/Scratch%20Code/Icons/w1.png">
-    </img>
-    <span class="tooltip">Notifications</span>
-    </div>
-    <div class="usr fl ">
-      <img class="icon ques_ic cons2" src="https://pranav-dakshina.github.io/newGitTest/Scratch%20Code/Icons/q1.png">
-    </img>
-    <span class="tooltip">Quick Help</span>
-    </div>
-  </div>
-</div>
-</div>
-<div class="main_container">
-  <div id="leftCol" class="Col">
-  </div>
-  <div class="middleCol">
-  <div class="cover">
-    <div class="prof_DP">
-      <img class="DP_img" src="https://pranav-dakshina.github.io/newGitTest/Scratch%20Code/images/me.jpg"/>
-    </div>
-    <div class="cover_img">
-      <img class="img_cover bor" src="https://pranav-dakshina.github.io/newGitTest/Scratch%20Code/images/b.jpg">
-    </img>
-    </div>
-    <div class="timeline_tab bor">
-      <div class="tl_pd">
-      <ul>
-        <li>
-          <a class="tl_tx_bor">Timeline
-          </a>
-        </li>
-        <li>
-          <a class="tl_tx_bor">About
-          </a>
-        </li>
-        <li>
-          <a class="tl_tx_bor">Friends
-          </a>
-        </li>
-        <li>
-          <a class="tl_tx_bor">Photos
-          </a>
-        </li>
-        <li>
-          <a class="tl_tx_bor">More
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  </div>
-  <div class="timeline">
-  <div class="left_time intro_bor">
-    <div class="head" >
-      <img class="in_icon" src="https://pranav-dakshina.github.io/newGitTest/Scratch%20Code/Icons/w1.png">
-      <span class="in_label">Intro</span>
-    </div>
-    <div class="intro_msg">
-      <div id="in_msg_box" class="in_msg_box">
-        <div id="in_msg1" class="in_msg" style="color: #365899; cursor: pointer; opacity: 0;">
-            <!--<span class="plus-icon glyphicon glyphicon-plus" >+</span>-->
-            <span class="plus_icon">+</span>
-            <span class="in_msg_txt">What is your mood ? 😊</span>
+      <div class="navi_icon">
+        <div class="usr fl">
+          <img class="icon usr_ic cons1" src="Icons/u4.png">
+          </img>
+          <span class="tooltip">Friend Requests</span>
         </div>
-        <div id="in_msg2" class="in_msg " style="color: #365899; cursor: pointer; opacity: 0;">
-            <span class="plus_icon">+</span>
-            <span class="in_msg_txt">What is your favourite sport ? ⚽ 🏀 🏈</span>
+        <div class="usr fl">
+          <img class="icon msg_ic cons1" src="Icons/m3.png">
+          </img>
+          <span class="tooltip">Messages</span>
         </div>
-        <div id="in_msg3" class="in_msg " style="color: #365899; cursor: pointer; opacity: 0;">
-            <span class="plus_icon">+</span>
-            <span class="in_msg_txt">What is your favourite food ? 🍗 🌮 🍜</span>
+        <div class="usr fl ">
+          <img class="icon noti_ic cons2" src="Icons/w1.png">
+          </img>
+          <span class="tooltip">Notifications</span>
         </div>
-        <div id="in_msg4" class="in_msg " style="color: #365899; cursor: pointer; opacity: 0;">
-            <span class="plus_icon">+</span>
-            <span class="in_msg_txt">What is your best gadget ? ⌚ 💻 📱 </span>
+        <div class="usr fl ">
+          <img class="icon ques_ic cons2" src="Icons/q1.png"></img>
+          <span class="tooltip">Quick Help</span>
         </div>
-        <script>
-        function msg_animate() {
-           for(j = 1; j < 5; j++){
-              var b = document.getElementById("in_msg"+j);
-              if(i == j){
-
-              }
-              else{
-                b.style.WebkitAnimation = "fadeout 4s 1";
-                b.style.Animation = "fadeout 4s 1";
-              }
-           }
-           var b = document.getElementById("in_msg"+i);
-           b.style.WebkitAnimation = "fadein 4s 1";
-           b.style.Animation = "fadein 4s 1";
-          if(i == 4){
-             i = 0;
-          }
-          i++;
-          }
-          var i = 1;
-          msg_animate();
-          setInterval(msg_animate, 4000);
-        </script>
       </div>
     </div>
-    <div class="rating">
-      <span>Rating</span>
+  </div>
+  <div class="main_container">
+    <div id="leftCol" class="Col">
+    </div>
+    <div class="middleCol">
+      <div class="cover">
+        <div class="prof_DP">
+          <img class="DP_img" src="images/me.jpg" />
+        </div>
+        <div class="prof_nm">
+          <span>Pranav
+        Dakshinamurthy</span>
+        </div>
+        <div class="cover_img">
+          <img class="img_cover bor" src="images/me_cover.jpg">
+          </img>
+        </div>
+        <div class="timeline_tab bor">
+          <div class="tl_pd">
+            <ul>
+              <li>
+                <a id="timeline" class="tl_tx_bor">Timeline
+          </a>
+              </li>
+              <li>
+                <a id="about" class="tl_tx_bor">About
+          </a>
+              </li>
+              <li>
+                <a id="friends" class="tl_tx_bor">Friends
+          </a>
+              </li>
+              <li>
+                <a id="photos" class="tl_tx_bor">Photos
+          </a>
+              </li>
+              <li>
+                <a id="more" class="tl_tx_bor">More
+          </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <script>
+        document.getElementById('timeline').focus();
+      </script>
+      <div class="timeline">
+        <div class="left_time">
+          <div class="intro intro_bor">
+            <div class="head">
+              <img class="in_icon" src="Icons/w1.png">
+              <span class="in_label">Intro</span>
+            </div>
+            <div class="intro_msg bor_bot">
+              <div id="in_msg_box" class="in_msg_box">
+                <div id="in_msg1" class="in_msg" style="color: #365899; cursor: pointer; opacity: 0;">
+                  <!--<span class="plus-icon glyphicon glyphicon-plus" >+</span>-->
+                  <span class="plus_icon">+</span>
+                  <span class="in_msg_txt">What is your mood ? 😊</span>
+                </div>
+                <div id="in_msg2" class="in_msg " style="color: #365899; cursor: pointer; opacity: 0;">
+                  <span class="plus_icon">+</span>
+                  <span class="in_msg_txt">What is your favourite sport ? ⚽ 🏀 🏈</span>
+                </div>
+                <div id="in_msg3" class="in_msg " style="color: #365899; cursor: pointer; opacity: 0;">
+                  <span class="plus_icon">+</span>
+                  <span class="in_msg_txt">What is your favourite food ? 🍗 🌮 🍜</span>
+                </div>
+                <div id="in_msg4" class="in_msg " style="color: #365899; cursor: pointer; opacity: 0;">
+                  <span class="plus_icon">+</span>
+                  <span class="in_msg_txt">What is your best gadget ? ⌚ 💻 📱 </span>
+                </div>
+                <script>
+                  function msg_animate() {
+                    for (j = 1; j < 5; j++) {
+                      var b = document.getElementById("in_msg" + j);
+                      if (i == j) {
+
+                      } else {
+                        b.style.WebkitAnimation = "fadeout 4s 1";
+                        b.style.Animation = "fadeout 4s 1";
+                      }
+                    }
+                    var b = document.getElementById("in_msg" + i);
+                    b.style.WebkitAnimation = "fadein 4s 1";
+                    b.style.Animation = "fadein 4s 1";
+                    if (i == 4) {
+                      i = 0;
+                    }
+                    i++;
+                  }
+                  var i = 1;
+                  msg_animate();
+                  setInterval(msg_animate, 4000);
+                </script>
+              </div>
+            </div>
+            <div class="rating_area bor_bot">
+              <div class="rating_box">
+                <span class="rat_lab">Rating</span>
+                <img id="img1" class="rat_icon" src="Icons/u2.png" />
+                <img id="img2" class="rat_icon" src="Icons/u3.png" />
+                <img id="img3" class="rat_icon" src="Icons/u1.png" />
+                <img id="img4" class="rat_icon" src="Icons/u3.png" />
+                <img id="img5" class="rat_icon" src="Icons/u2.png" />
+              </div>
+            </div>
+            <div class="abt">
+              <ul class="abt_ls bor_bot">
+                <li class="abt_pd">
+                  <div class="fl">
+                    <img class="abt_ic" src="Icons/suitcase.png" />
+                  </div>
+                  <div class="abt_dt">
+                    <a>
+              Software Developer at UST Global
+            </a>
+                  </div>
+                </li>
+                <li class="abt_pd">
+                  <div class="fl">
+                    <img class="abt_ic" src="Icons/cert.png" />
+                  </div>
+                  <div class="abt_dt">
+                    <a>
+              Studied Masters in Computer Science at Texas A&M University - Kingsville
+            </a>
+                  </div>
+                </li>
+                <li class="abt_pd">
+                  <div class="fl">
+                    <img class="abt_ic" src="Icons/cert.png" />
+                  </div>
+                  <div class="abt_dt">
+                    <a>
+              Studied Bachelors in Electronics and Communication Engineering at Anna University
+            </a>
+                  </div>
+                </li>
+                <li class="abt_pd">
+                  <div class="fl">
+                    <img class="abt_ic" src="Icons/cert.png" />
+                  </div>
+                  <div class="abt_dt">
+                    <a>
+              Went to Sindhi Model Senior Secondary School
+            </a>
+                  </div>
+                </li>
+                <li class="abt_pd">
+                  <div class="fl">
+                    <img class="abt_ic" src="Icons/home.png" />
+                  </div>
+                  <div class="abt_dt">
+                    <a>
+              Lives in San Diego, California
+            </a>
+                  </div>
+                </li>
+                <li class="abt_pd">
+                  <div class="fl">
+                    <img class="abt_ic" src="Icons/heart.png" />
+                  </div>
+                  <div class="abt_dt">
+                    <a>
+              Single
+            </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="right_time">
+          <div class="stat intro_bor">
+            <div class="top_bar">
+              <div class="cont">
+                <div class="status">
+                  <img class="pen" src="Icons/pen.png" />
+                  <a class="cont_pd">Status</a>
+                </div>
+                <div class="status">
+                  <img id="cam" class="pen" src="Icons/cam.png" />
+                  <a class="cont_pd">Photo/Video</a>
+                </div>
+                <div class="status">
+                  <img id="vid" class="pen" src="Icons/vid.png" />
+                  <a class="cont_pd">Live Video</a>
+                </div>
+                <div class="status">
+                  <img id="flag" class="pen" src="Icons/flag.png" />
+                  <a class="cont_pd">Life Event</a>
+                </div>
+              </div>
+            </div>
+            <!--<div class="stat_msg">
+         <img class="img" src="images/me.jpg" style="height: 40px; width: 40px;" />
+         <a class="cont">What's on your mind?</a>
+       </div>-->
+            <div class="stat_msg">
+              <img class="img fl" src="images/me.jpg" style="height: 40px; width: 40px;" />
+              <form class="cont fl">
+                <input type="text" class="inp" autocomplete="off" placeholder=" What's on your mind? "></input>
+              </form>
+            </div>
+            <div class="bot_bar">
+              <div class="cont">
+                <div class="post">
+                  <a>Post</a>
+                </div>
+                <div class="pvcy">
+                  <img class="pvcy_ic" src="Icons/w1.png" />
+                  <a class="fl">Public</a>
+                  <img class="arr_ic" src="Icons/db-down.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="right_cont">
+            <div class="stat intro_bor">
+              <div class="post_cont">
+                <div class="top_cont fl">
+                  <img class="img fl" src="images/me.jpg" style="height: 40px; width: 40px;">
+                  <div class="cont_bar">
+                    <div class="cont">
+                      <a class="nm">Pranav Dakshinamurthy </a>
+                      <a class="nl pd-left">shared </a>
+                      <a class="tag pd-left">Youtube</a>
+                      <a class="nl">'s videos</a>
+                    </div>
+                    <div class="cont">
+                      <a class="fl fnt-sz">24 hrs</a>
+                      <div class="cons3">
+                        <img class="pvcy_ic pd-left" src="Icons/w1.png" />
+                        <img class="arr_ic" src="Icons/db-down.png" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="vid fl bor_bot">
+                  <iframe width="492" height="315" src="https://www.youtube.com/embed/ue80QwXMRHg" frameborder="0" controls></iframe>
+                </div>
+                <div class="lcs fl">
+                  <div class="lk cons1 fl swd">
+                    <img class="lk_img fl" src="Icons/like.png" />
+                    <a class="fl">Like</a>
+                  </div>
+                  <div class="lk cons1 fl">
+                    <img class="lk_img fl" src="Icons/com.png" />
+                    <a class="fl">Comment</a>
+                  </div>
+                  <div class="lk cons1 fl">
+                    <img class="lk_img fl" src="Icons/shr.png" />
+                    <a class="fl">Share</a>
+                  </div>
+                </div>
+              </div>
+              <div class="comm fl">
+                <img class="img fl" src="images/me.jpg" style="height: 35px; width: 35px;" />
+                <form class="comm_cont fl">
+                  <input type="text" class="inp" autocomplete="off" placeholder=" Write a comment..."></input>
+                </form>
+              </div>
+            </div>
+            <div class="stat intro_bor">
+              <div class="post_cont fl bor_bot">
+                <div class="top_cont fl">
+                  <img class="img fl" src="images/me.jpg" style="height: 40px; width: 40px;">
+                  <div class="cont_bar">
+                    <div class="cont">
+                      <a class="nm">Pranav Dakshinamurthy </a>
+                      <a class="nl pd-left">shared </a>
+                      <a class="tag pd-left">Youtube</a>
+                      <a class="nl">'s videos</a>
+                    </div>
+                    <div class="cont">
+                      <a class="fl fnt-sz">24 hrs</a>
+                      <div class="cons3">
+                        <img class="pvcy_ic pd-left" src="Icons/w1.png" />
+                        <img class="arr_ic" src="Icons/db-down.png" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="vid fl bor_bot">
+                  <iframe width="492" height="315" src="https://www.youtube.com/embed/FrVcEndce9I" frameborder="0" controls></iframe>
+                </div>
+                <div class="lcs fl">
+                  <div class="lk cons1 fl swd">
+                    <img class="lk_img fl" src="Icons/like.png" />
+                    <a class="fl">Like</a>
+                  </div>
+                  <div class="lk cons1 fl">
+                    <img class="lk_img fl" src="Icons/com.png" />
+                    <a class="fl">Comment</a>
+                  </div>
+                  <div class="lk cons1 fl">
+                    <img class="lk_img fl" src="Icons/shr.png" />
+                    <a class="fl">Share</a>
+                  </div>
+                </div>
+              </div>
+              <div class="comm fl">
+                <img class="img fl" src="images/me.jpg" style="height: 35px; width: 35px;" />
+                <form class="comm_cont fl">
+                  <input type="text" class="inp" autocomplete="off" placeholder=" Write a comment..."></input>
+                </form>
+              </div>
+            </div>
+            <div class="stat intro_bor">
+              <div class="post_cont">
+                <div class="top_cont fl">
+                  <img class="img fl" src="images/me.jpg" style="height: 40px; width: 40px;">
+                  <div class="cont_bar">
+                    <div class="cont">
+                      <a class="nm">Pranav Dakshinamurthy </a>
+                      <a class="nl pd-left">shared </a>
+                      <a class="tag pd-left">Youtube</a>
+                      <a class="nl">'s videos</a>
+                    </div>
+                    <div class="cont">
+                      <a class="fl fnt-sz">24 hrs</a>
+                      <div class="cons3">
+                        <img class="pvcy_ic pd-left" src="Icons/w1.png" />
+                        <img class="arr_ic" src="Icons/db-down.png" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="vid fl bor_bot">
+                  <iframe width="492" height="315" src="https://www.youtube-nocookie.com/embed/4na-wZte6Co" frameborder="0" controls></iframe>
+                </div>
+                <div class="lcs fl">
+                  <div class="lk cons1 fl swd">
+                    <img class="lk_img fl" src="Icons/like.png" />
+                    <a class="fl">Like</a>
+                  </div>
+                  <div class="lk cons1 fl">
+                    <img class="lk_img fl" src="Icons/com.png" />
+                    <a class="fl">Comment</a>
+                  </div>
+                  <div class="lk cons1 fl">
+                    <img class="lk_img fl" src="Icons/shr.png" />
+                    <a class="fl">Share</a>
+                  </div>
+                </div>
+              </div>
+              <div class="comm fl">
+                <img class="img fl" src="images/me.jpg" style="height: 35px; width: 35px;" />
+                <form class="comm_cont fl">
+                  <input type="text" class="inp" autocomplete="off" placeholder=" Write a comment..."></input>
+                </form>
+              </div>
+            </div>
+          </ol>
+        </div>
+      </div>
+      <div id="rightCol" class="Col">
+      </div>
     </div>
   </div>
-</div>
-</div>
-  <div id="rightCol" class="Col">
-  </div>
-</div>
 </body>
+
 </html>
