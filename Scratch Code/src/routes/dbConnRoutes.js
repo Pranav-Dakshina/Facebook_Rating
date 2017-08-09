@@ -20,13 +20,14 @@ var router = function(con) {
           function(err, rec) {
              info.name = rec[0];
       });
-      con.query('select count(*) as sum from likes where forID = ?', userID,
+      /*con.query('select count(*) as sum from likes where forID = ?', userID,
           function(err, rec) {
              info.likes = rec[0];
       });
       con.query('select * from rating where userID = ?', userID, function(err, rec) {
         //console.log(rec);
-        var rating = rec[0].rating + info.likes.sum;
+        var rating = rec[0].rating + info.likes.sum;*/
+        var rating = 520;
         if (rating < 500) {
 
         }
@@ -38,7 +39,7 @@ var router = function(con) {
           name: info.name
         });
       });
-    });
+    //});
 
   return bookRouter;
 };
