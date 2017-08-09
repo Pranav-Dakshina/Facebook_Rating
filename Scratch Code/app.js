@@ -1,31 +1,24 @@
 var express = require('express');
-var Knex = require('knex');
+
 var app = express();
 var sql = require('mysql');
 
-const config = {
-  user: process.env.SQL_USER,
-  password: process.env.SQL_PASSWORD,
-  database: process.env.SQL_DATABASE
-};
+var con = sql.createConnection({
+    host: '35.202.39.85',
+    user: 'Nero',
+    password: 'Mysql@2210',
+    database: 'facebook_rating'
+});
 
-if (process.env.INSTANCE_CONNECTION_NAME && process.env.NODE_ENV === 'production') {
-  if (process.env.SQL_CLIENT === 'mysql') {
-    config.socketPath = `/cloudsql/${process.env.INSTANCE_CONNECTION_NAME}`;
-  } else if (process.env.SQL_CLIENT === 'pg') {
-    config.host = `/cloudsql/${process.env.INSTANCE_CONNECTION_NAME}`;
-  }
-}
-
-// Connect to the database
-const con = Knex({
-  client: process.env.SQL_CLIENT,
-  connection: config
+con.connect(function(err) {
+    console.log(err);
 });
 
 var port = process.env.PORT || 8080;
 
 var dbConnRouter = require('./src/routes/dbConnRoutes')(con);
+//var adminRouter = require('./src/routes/adminRoutes')(nav, con);
+//var authRouter = require('./src/routes/authRoutes')(nav, con);
 
 app.use(express.static('./public/style'));
 app.use(express.static('./public/Icons'));
@@ -36,6 +29,12 @@ app.set('views','./src/views');
 app.set('view engine', 'ejs');
 
 app.use('/', dbConnRouter);
+//app.use('/Admin', adminRouter);
+//app.use('/Auth', authRouter);
+
+/*app.get('/', function(req, res) {
+    res.render('index');
+});*/
 app.listen(port, function(err) {
     console.log('running server on port ' + port);
 });
