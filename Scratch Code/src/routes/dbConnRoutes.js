@@ -1,6 +1,6 @@
 var express = require('express');
 var bookRouter = express.Router();
-var sql = require('mysql');
+//var sql = require('mysql');
 var info = {
   name: {
     first_name: "",
@@ -16,7 +16,7 @@ var router = function(con) {
   bookRouter.route('/')
     .get(function(req, res) {
       var userID = 1;
-      con.query('select * from user where userID = ?', userID,
+      con.query('select first_name, last_name from user where userID = ?', userID,
           function(err, rec) {
              info.name = rec[0];
       });
