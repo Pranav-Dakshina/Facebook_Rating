@@ -5,7 +5,7 @@ var sql = require('mysql');
 
 var con = sql.createConnection({
     host: '35.202.39.85',
-    user: 'Nero',
+    user: 'root',
     password: 'Mysql@2210',
     database: 'facebook_rating'
 });
