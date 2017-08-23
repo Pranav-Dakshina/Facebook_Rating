@@ -69,34 +69,3 @@ function rt_ld() {
   //});
 
 }
-
-function lt_fx() {
-  function rightBarControl() {
-    var windowHeight = $(window).height();
-    var scrollHeight = $(window).scrollTop();
-    var rightBarWidth = $('.main').width() * .2 //20% of .main width
-    var rightBarHeight = $('.right').outerHeight();
-    var rightBarOffset = $('.left').offset().left + $('.left').outerWidth();
-    var rightBarTop = 30; //30 because .head is 30px high
-    if (windowHeight - 30 < rightBarHeight) { //Again including 30 because of .head
-      rightBarTop = windowHeight - rightBarHeight;
-    }
-    if ((windowHeight + scrollHeight) >= rightBarHeight) {
-      $('.right').css({
-        position: 'fixed',
-        left: rightBarOffset,
-        top: rightBarTop,
-        width: rightBarWidth
-      })
-    } else {
-      $('.right').css({
-        position: 'static',
-        left: '',
-        top: '',
-        width: '20%'
-      })
-    }
-  }
-  $(window).scroll(rightBarControl); //Run control on window scroll
-  $(window).resize(rightBarControl);
-}
