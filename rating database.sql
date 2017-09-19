@@ -1,5 +1,5 @@
-CREATE DATABASE facebook_rating;
-
+/*CREATE DATABASE facebook_rating;*/
+/*
 CREATE TABLE user(userid INT NOT NULL AUTO_INCREMENT,
 				first_name VARCHAR(20),
                 last_name VARCHAR(20), 
@@ -137,12 +137,12 @@ delimiter $$
 CREATE TRIGGER update_counter_likes
 		AFTER INSERT ON likes
         FOR EACH ROW
-	BEGIN
+	BEGIN */
     /* declare ins_id INT;
     
     select forID into ins_id from likes where likes.forID = NEW.forID;
     */
-	INSERT INTO counter(userID, no_of_likes, no_of_posts) 
+	/* INSERT INTO counter(userID, no_of_likes, no_of_posts) 
 				values(NEW.forID, 1, 0)
                 ON DUPLICATE KEY UPDATE
                 no_of_likes = no_of_likes + 1; 
@@ -162,7 +162,7 @@ CREATE TRIGGER update_posts_counter
                 
 insert into likes values(1, 1, 2);
 
-select * from login_info;
+select * from login_info;*/
 
 insert into posts(forID, postID) values(1,1);
 
@@ -181,14 +181,14 @@ CREATE TABLE login_info(userid INT NOT NULL,
 				  REFERENCES user(userid)); 
                   
 INSERT INTO login_info(userid, uname, pass) values(1,"pranav","pranav");
-
+/*
 select * from posts;
 select * from posts_counter;
 select * from user;
 select * from likes;
 select * from login_info;
 select * from counter;
-select * from rating;
+select * from rating;*/
 
 create table rating(userID INT NOT NULL,
 					rating BIGINT NOT NULL,
@@ -221,9 +221,10 @@ insert into posts(forID, postID) values(3,1);
 insert into posts(forID, postID) values(3,2); 
 
 truncate table posts;
-
+/*
 SELECT COUNT(*) as sum FROM likes where forID = 1;
 
 GRANT ALL PRIVILEGES ON *.* TO 'Nero'@'%' IDENTIFIED BY 'Mysql@2210' WITH GRANT OPTION;
  FLUSH PRIVILEGES;
  
+*/

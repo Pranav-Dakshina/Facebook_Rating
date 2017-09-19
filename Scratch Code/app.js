@@ -8,7 +8,7 @@ var con = sql.createConnection({
     //host: '35.202.39.85',
     host: 'localhost',
     user: 'root',
-    password: 'Mysql@2210',
+    password: 'Linode@2210',
     database: 'facebook_rating'
     //connectTimeout: 60000
 });
@@ -20,8 +20,6 @@ con.connect(function(err) {
 var port = process.env.PORT || 8080;
 
 var dbConnRouter = require('./src/routes/dbConnRoutes')(con);
-//var adminRouter = require('./src/routes/adminRoutes')(nav, con);
-//var authRouter = require('./src/routes/authRoutes')(nav, con);
 
 app.use(express.static('./public/style'));
 app.use(express.static('./public/Icons'));
