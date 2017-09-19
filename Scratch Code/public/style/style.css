@@ -94,6 +94,18 @@ div {
   padding-top: 0px;
 }
 
+@media (max-width: 850px) {
+  .ic_srch {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .ic_srch {
+    display: none;
+  }
+}
+
 .sz {
   margin-left: 4%;
   height: 40px;
@@ -111,6 +123,12 @@ div {
   width: 220px;
   margin-left: 1%;
   overflow: hidden;
+}
+
+@media (max-width: 450px) {
+  .pf_hm_rat {
+    width: 100px;
+  }
 }
 
 .navi_icon {
